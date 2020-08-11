@@ -26,6 +26,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 INSTALLED_APPS = [
     'home',
     'search',
+    'bugdemo_auth',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -113,6 +114,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTH_USER_MODEL = 'bugdemo_auth.User'
 
 
 # Internationalization
